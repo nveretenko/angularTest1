@@ -1,0 +1,39 @@
+<h1>Задача-1</h1>
+
+<h2>ol</h2>
+<ol>
+  <li *ngFor="let item of list">
+    {{item}}
+  </li>
+</ol>
+<hr />
+
+<h2>table</h2>
+<table>
+  <tr>
+    <td *ngFor="let item of list">
+      {{item}}
+    </td>
+  </tr>
+</table>
+<hr />
+
+<h2>select</h2>
+<select>
+  <option *ngFor="let item of list">
+    {{item}}
+  </option>
+</select>
+<hr />
+
+<button (click)="addValueApi()">API</button>
+
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <input type="text"  placeholder="input" formControlName = "inputValue">
+  <button type="submit" >добавить</button>
+</form>
+
+<button (click)="onClick()">random string</button>
+<hr />
+
